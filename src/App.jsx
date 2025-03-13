@@ -1,6 +1,6 @@
 import React from 'react'
-import MiddleSection from './components/MiddleSection2/MiddleSection2'
-import CenteredLayout from './components/CenterLayout/CenteredLayout';
+import MiddleSection2 from './components/MiddleSection2/MiddleSection2'
+ 
 const dummyData = {
   address:"Gurgaon Haryana, India",
   profilePic:  "https://th.bing.com/th/id/OIP.UGlKxiZQylR3CnJIXSbFIAHaLL?w=203&h=307&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
@@ -19,9 +19,9 @@ const dummyData = {
 };
 const App = () => {
   return (
-    <CenteredLayout>
-      <MiddleSection dummyData={dummyData} />
-    </CenteredLayout>
+    
+      <MiddleSection2 dummyData={dummyData} />
+    
   );
 }
 
