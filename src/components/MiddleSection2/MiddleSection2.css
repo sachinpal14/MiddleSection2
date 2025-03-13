@@ -1,199 +1,110 @@
 .middle-section-2-middle-section {
-    padding: 20px;
-    border-radius: 12px;
-    text-align: center;
-    flex-direction: column;
-    display: flex;
-    justify-content: space-evenly;
-    width: 25vw;
-    height: 100vh;
-    position: relative;
-    
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  width: 25vw;
+  height: 100vh;
+  position: relative;
+}
+
+.middle-section-2-profile-header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+  gap: 40px;
+  align-items: center;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.middle-section-2-profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.nameAndEdit {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.middle-section-2-profile-info h2 {
+  font-size: 17px;
+}
+
+.middle-section-2-imageContainer {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+
+.middle-section-2-profile-pic {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.middle-section-2-profile-header div {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.middle-section-2-profile-buttons {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+
+.middle-section-2-about-section {
+  padding: 5px 0px;
+}
+
+.middle-section-2-about-section h3 {
+  text-align: start;
+}
+
+.middle-section-2-about-section p {
+  text-align: start;
+  font-size: 14px;
+}
+
+@media (min-width: 1024px) and (max-width: 1062px) {
+  .middle-section-2-middle-section {
+    width: 40vw;
+    padding: 30px;
   }
-  
+  .middle-section-2-imageContainer {
+    width: 90px;
+    height: 90px;
+  }
+
   .middle-section-2-profile-header {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: end;
-    gap: 40px;
-    align-items: center;
-    padding: 5px;
     font-size: 20px;
   }
-  
-  .middle-section-2-profile-info {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-  }
-  .nameAndEdit{
-    display: flex;
-    justify-content: space-between;
-    width: 75%;
-  }
-  
   .middle-section-2-profile-info h2 {
-    font-size: 17px;
+    font-size: 20px;
   }
-  
-  .middle-section-2-imageContainer {
-    height: 75px;
-    width: 75px;
-    border-radius: 50%;
-  }
-  
-  .middle-section-2-profile-pic {
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .middle-section-2-profile-header div {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  
-  .middle-section-2-profile-buttons {
-    display: flex;
-    justify-content: end;
-    gap: 20px;
-  }
-  
-  
-  
-  .middle-section-2-about-section {
-    padding: 5px 0px;
-  }
-  
-  .middle-section-2-about-section h3 {
-    text-align: start;
-  }
-  
   .middle-section-2-about-section p {
-    text-align: start;
-    font-size: 14px;
+    font-size: 16px;
   }
-  
-  .middle-section-2-collabs-section h3 {
-    text-align: start;
-  }
-  
-  .middle-section-2-collabratorCard {
-    padding: 2px 50px;
-  }
-  
   .middle-section-2-collabratorDetails {
-    flex-direction: column;
-    display: flex;
-    width: 100px;
+    width: 150px;
   }
-  
   .middle-section-2-collabratorDetails h4 {
-    font-size: 15px;
-    font-weight: 500;
-    text-align: start;
+    font-size: 18px;
   }
-  
-  .middle-section-2-collabratorDetails .middle-section-2-education {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-  }
-  
-
-  .middle-section-2-collabratorDetails .middle-section-2-education h6 {
-    font-weight: 300;
-    color: #726d6dea;
-  }
-  
-  .middle-section-2-collabratorDetails .middle-section-2-subCollabrators {
-    display: flex;
-    align-items: center;
-    gap: 2px;
-    color: #514f4fea;
-  }
-  
   .middle-section-2-collabratorDetails .middle-section-2-subCollabrators h6 {
-    font-size: 7px;
-    font-weight: 100;
-    color: #828282ea;
+    font-size: 10px;
   }
-  
-  
-  
   .middle-section-2-blur {
-    position: absolute;
-    backdrop-filter: blur(1px);
-    background-color: rgba(255, 255, 255, 0.815);
-    height: 150px;
-    width: 100%;
-    bottom: 0;
-    flex-direction: column;
-    display: flex;
-    gap: 15px;  
-    align-items: center;
+    height: 200px;
   }
-  
-  .middle-section-2-blur h2 {
-    font-weight: 600;
-    font-size: 22px;
-  }
-  
+  .middle-section-2-blur h2,
   .middle-section-2-blur h3 {
-    font-weight: 100;
-    font-size: 22px;
+    font-size: 26px;
   }
-  
-  .middle-section-2-blur .middle-section-2-lock {
-    border: 2px solid black;
-    border-radius: 50%;
-    height: fit-content;
-    width: fit-content;
-    padding: 10px;
-  }
-  
-  .middle-section-2-lockIcon {
-    font-size: 45px;
-    font-weight: 500;
-  }
-
- 
-
-  @media (min-width: 1024px ) and (max-width:1062px) {
-    .middle-section-2-middle-section {
-        width: 40vw;
-        padding: 30px;
-       
-    }
-    .middle-section-2-imageContainer{
-      width: 90px;
-      height: 90px;
-    }
-    
-    .middle-section-2-profile-header {
-        font-size: 20px;
-    }
-    .middle-section-2-profile-info h2 {
-        font-size: 20px;
-    }
-    .middle-section-2-about-section p {
-        font-size: 16px;
-    }
-    .middle-section-2-collabratorDetails {
-        width: 150px;
-    }
-    .middle-section-2-collabratorDetails h4 {
-        font-size: 18px;
-    }
-    .middle-section-2-collabratorDetails .middle-section-2-subCollabrators h6 {
-        font-size: 10px;
-    }
-    .middle-section-2-blur {
-        height: 200px;
-    }
-    .middle-section-2-blur h2, .middle-section-2-blur h3 {
-        font-size: 26px;
-    }
 }
