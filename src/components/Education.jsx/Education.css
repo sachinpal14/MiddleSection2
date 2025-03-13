@@ -1,0 +1,28 @@
+.middle-section-2-main-education {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.middle-section-2-education-headingAndEdit {
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle-section-2-buttons-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 1024px) {
+    .middle-section-2-main-education {
+        gap: 20px;
+    }
+    .middle-section-2-buttons-section {
+        gap: 24px;
+    }
+}

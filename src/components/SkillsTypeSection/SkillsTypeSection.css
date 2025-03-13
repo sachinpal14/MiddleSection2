@@ -1,0 +1,22 @@
+.middle-section-2-skill-list {
+    display: flex;
+    align-items: center;
+     gap: 10px;
+    
+    padding: 5px;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .middle-section-2-headingAndIcons{
+    display: flex;
+    justify-content: space-between;
+  }
+  .middle-section-2-skill-list .middle-section-2-skillsMiniDiv {
+    background-color: #f3efef;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  .middle-section-2-skills-section h3{
+    text-align: start;
+  }
