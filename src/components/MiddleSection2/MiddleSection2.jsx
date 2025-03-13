@@ -3,17 +3,32 @@ import "./MiddleSection2.css";
 import { FiEdit } from "react-icons/fi";
 import image from '../../assets/person.jpeg'
 const MiddleSection2 = () => {
-  // Using useState for all dynamic data
-  const [profilePic, setProfilePic] = useState(image);
+  // State variables
+  const [profilePic, setProfilePic] = useState(
+    image
+  );
   const [collabs, setCollabs] = useState(10);
   const [connections, setConnections] = useState(50);
   const [name, setName] = useState("John Doe");
-  const [title, setTitle] = useState("Software Engineer || Software Developer");
+  const [title, setTitle] = useState("Software Engineer");
   const [address, setAddress] = useState("New York, USA");
   const [buttons, setButtons] = useState(["Message", "Connect"]);
-  const [about, setAbout] = useState("Passionate developer with experience in web and mobile development.");
   const [skills, setSkills] = useState(["React", "Node.js", "JavaScript"]);
-  const [education, setEducation] = useState(["MIT", "Harvard","BCA" , "12th"]);
+  const [education, setEducation] = useState(["MIT", "Harvard"]);
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  // About Section with "See More" Feature
+  const [fullAboutText ,setfullAboutText]=useState(
+    "Passionate developer with experience in web and mobile development. I specialize in React, Node.js, and building scalable applications. Love to work on open-source projects and contribute to the tech community.")
+
+  const toggleExpand = () => setIsExpanded(!isExpanded);
+
+  // Limiting text length before showing "See More"
+  const maxLength = 100;
+  const displayedText = isExpanded
+    ? fullAboutText
+    : fullAboutText.slice(0, maxLength) +
+      (fullAboutText.length > maxLength ? "..." : "");
 
   return (
     <div className="middle-section-2-mainParent">
@@ -22,10 +37,12 @@ const MiddleSection2 = () => {
           {/* Profile Details */}
           <div className="middle-section-2-profile-header">
             <div className="middle-section-2-imageContainer">
-              {/* ProfileImage */}
-              <img src={profilePic} alt="Profile" className="middle-section-2-profile-pic" />
+              <img
+                src={profilePic}
+                alt="Profile"
+                className="middle-section-2-profile-pic"
+              />
             </div>
-            {/* Number of the Connection and Collabs*/}
             <div className="middle-section-2-collabsDetails">
               <h4>Collabs</h4> <span>{collabs}</span>
             </div>
@@ -35,7 +52,7 @@ const MiddleSection2 = () => {
             </div>
           </div>
 
-          {/* Name and the Details */}
+          {/* Name and Details */}
           <div className="middle-section-2-profile-info">
             <div className="nameAndEdit">
               <FiEdit />
@@ -54,13 +71,23 @@ const MiddleSection2 = () => {
             ))}
           </div>
 
-          {/* About Section */}
+          {/* About Section with Expandable Content */}
           <div className="middle-section-2-about-section">
             <h3>About</h3>
-            <p>{about}</p>
+
+            <p>
+              {displayedText}
+              <span>
+                {fullAboutText.length > maxLength && (
+                  <button className="middle-section-2-about-button" onClick={toggleExpand}>
+                    {isExpanded ? "See Less" : "See More"}
+                  </button>
+                )}
+              </span>
+            </p>
           </div>
 
-          {/* Upload section */}
+          {/* Upload Section */}
           <div className="middle-section-2-upload-section">
             <div className="middle-section-2-headingAndEdit">
               <h3>Upload</h3>
@@ -78,7 +105,7 @@ const MiddleSection2 = () => {
             <h6>No Experience yet.</h6>
           </div>
 
-          {/* Skills */}
+          {/* Skills Section */}
           <div className="middle-section-2-skills-section">
             <div className="middle-section-2-headingAndIcons">
               <h3>Skills</h3>

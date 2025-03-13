@@ -65,10 +65,15 @@
   gap: 20px;
 }
 
-.middle-section-2-about-section {
-  padding: 5px 0px;
+ .middle-section-2-about-button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: rgb(144, 143, 143);
+ }
+.middle-section-2-aboutPara{
+  display: flex;
 }
-
 .middle-section-2-about-section h3 {
   text-align: start;
 }
