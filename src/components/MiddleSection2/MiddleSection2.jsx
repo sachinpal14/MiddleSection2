@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./MiddleSection2.css";
-
 import { FiEdit } from "react-icons/fi";
+import image from '../../assets/person.jpeg'
+const MiddleSection2 = () => {
+  // Using useState for all dynamic data
+  const [profilePic, setProfilePic] = useState(image);
+  const [collabs, setCollabs] = useState(10);
+  const [connections, setConnections] = useState(50);
+  const [name, setName] = useState("John Doe");
+  const [title, setTitle] = useState("Software Engineer || Software Developer");
+  const [address, setAddress] = useState("New York, USA");
+  const [buttons, setButtons] = useState(["Message", "Connect"]);
+  const [about, setAbout] = useState("Passionate developer with experience in web and mobile development.");
+  const [skills, setSkills] = useState(["React", "Node.js", "JavaScript"]);
+  const [education, setEducation] = useState(["MIT", "Harvard","BCA" , "12th"]);
 
-const MiddleSection2 = ({ dummyData }) => {
   return (
     <div className="middle-section-2-mainParent">
       <div className="middle-section-2-middle-container">
@@ -12,128 +23,114 @@ const MiddleSection2 = ({ dummyData }) => {
           <div className="middle-section-2-profile-header">
             <div className="middle-section-2-imageContainer">
               {/* ProfileImage */}
-              <img
-                src={dummyData.profilePic}
-                alt="Profile"
-                className="middle-section-2-profile-pic"
-              />
+              <img src={profilePic} alt="Profile" className="middle-section-2-profile-pic" />
             </div>
             {/* Number of the Connection and Collabs*/}
             <div className="middle-section-2-collabsDetails">
-              {/* Collabs */}
-              <h4>Collabs</h4> <span>{dummyData.collabs} </span>
+              <h4>Collabs</h4> <span>{collabs}</span>
             </div>
             <div className="middle-section-2-connectionsDetails">
-              {/* Connections */}
               <h4>Connections</h4>
-              <span>{dummyData.connections} </span>
+              <span>{connections}</span>
             </div>
           </div>
+
           {/* Name and the Details */}
           <div className="middle-section-2-profile-info">
             <div className="nameAndEdit">
               <FiEdit />
-              <h2>{dummyData.name}</h2>
+              <h2>{name}</h2>
             </div>
-            <p>{dummyData.title}</p>
-            <p>{dummyData.address}</p>
+            <p>{title}</p>
+            <p>{address}</p>
           </div>
+
           {/* Buttons */}
           <div className="middle-section-2-profile-buttons">
-            {dummyData.buttons.map((btn, index) => (
-              <div>
-                <button key={index} className="middle-section-2-btn">
-                  {btn}
-                </button>
-              </div>
+            {buttons.map((btn, index) => (
+              <button key={index} className="middle-section-2-btn">
+                {btn}
+              </button>
             ))}
           </div>
+
           {/* About Section */}
           <div className="middle-section-2-about-section">
             <h3>About</h3>
-            <p>{dummyData.about}</p>
+            <p>{about}</p>
           </div>
-          {/* Upload section  */}
-          <div>
-            <div className="middle-section-2-upload-section">
-              <div className="middle-section-2-headingAndEdit">
-                <h3> {"Upload"} </h3>
 
-                <FiEdit className="middle-section-2-icon" />
-              </div>
-              <h6>{"No Upload yet"}.</h6>
+          {/* Upload section */}
+          <div className="middle-section-2-upload-section">
+            <div className="middle-section-2-headingAndEdit">
+              <h3>Upload</h3>
+              <FiEdit className="middle-section-2-icon" />
             </div>
+            <h6>No Upload yet.</h6>
           </div>
-          {/* Experince Sections */}
-          <div>
-            <div className="middle-section-2-upload-section">
-              <div className="middle-section-2-headingAndEdit">
-                <h3> {"Experience"} </h3>
 
-                <FiEdit className="middle-section-2-icon" />
-              </div>
-              <h6>{"No Experience yet"}.</h6>
+          {/* Experience Section */}
+          <div className="middle-section-2-upload-section">
+            <div className="middle-section-2-headingAndEdit">
+              <h3>Experience</h3>
+              <FiEdit className="middle-section-2-icon" />
             </div>
+            <h6>No Experience yet.</h6>
           </div>
+
           {/* Skills */}
           <div className="middle-section-2-skills-section">
             <div className="middle-section-2-headingAndIcons">
-              <h3>{"Skills"}</h3>
+              <h3>Skills</h3>
               <FiEdit />
             </div>
-
             <div className="middle-section-2-skill-list">
-              {dummyData.skills.map((val, index) => (
+              {skills.map((val, index) => (
                 <div key={index} className="middle-section-2-skillsMiniDiv">
                   {val}
                 </div>
               ))}
             </div>
           </div>
-          {/* Collabs Section  */}
-          <div>
-            <div className="middle-section-2-upload-section">
-              <div className="middle-section-2-headingAndEdit">
-                <h3> {"Collabs"} </h3>
 
-                <FiEdit className="middle-section-2-icon" />
-              </div>
-              <h6>{"No Collab yet"}.</h6>
+          {/* Collabs Section */}
+          <div className="middle-section-2-upload-section">
+            <div className="middle-section-2-headingAndEdit">
+              <h3>Collabs</h3>
+              <FiEdit className="middle-section-2-icon" />
             </div>
+            <h6>No Collab yet.</h6>
           </div>
-          {/* 
-         intersets section */}
+
+          {/* Interests Section */}
           <div className="middle-section-2-skills-section">
             <div className="middle-section-2-headingAndIcons">
-              <h3>{"Interests"}</h3>
+              <h3>Interests</h3>
               <FiEdit />
             </div>
-
             <div className="middle-section-2-skill-list">
-              {dummyData.skills.map((val, index) => (
+              {skills.map((val, index) => (
                 <div key={index} className="middle-section-2-skillsMiniDiv">
                   {val}
                 </div>
               ))}
             </div>
           </div>
-          {/* Education Sections */}
+
+          {/* Education Section */}
           <div className="middle-section-2-main-education">
             <div className="middle-section-2-education-headingAndEdit">
-              <h3>{"Education"}</h3>
+              <h3>Education</h3>
               <FiEdit />
             </div>
             <div className="middle-section-2-buttons-section">
-              {dummyData.collaborators.education.map((btn, index) => (
-                <div>
-                  <button key={index} className="middle-section-2-btn">
-                    {btn}
-                  </button>
-                </div>
+              {education.map((edu, index) => (
+                <button key={index} className="middle-section-2-btn">
+                  {edu}
+                </button>
               ))}
             </div>
           </div>
-          ;
         </div>
       </div>
     </div>
