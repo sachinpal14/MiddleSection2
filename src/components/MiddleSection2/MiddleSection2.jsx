@@ -35,10 +35,10 @@ const MiddleSection = ({ dummyData }) => {
         </div>
         {/* Name and the Details */}
         <div className="middle-section-2-profile-info">
-         <div className="nameAndEdit">
-         <FiEdit/>
-         <h2>{dummyData.name}</h2>
-         </div>
+          <div className="nameAndEdit">
+            <FiEdit />
+            <h2>{dummyData.name}</h2>
+          </div>
           <p>{dummyData.title}</p>
           <p>{dummyData.address}</p>
         </div>
@@ -63,17 +63,16 @@ const MiddleSection = ({ dummyData }) => {
         <SmallSection heading="Experience" msg="Fresh to field " />
 
         {/* Skills */}
-        <SkillsTypeSection dummyData={dummyData} name="Skills"/>
+        <SkillsTypeSection dummyData={dummyData} name="Skills" />
         {/* Collabs Section  */}
 
         <SmallSection heading="Collab" msg="Still looking for Co-Stars" />
         {/* 
          intersets section */}
-          <SkillsTypeSection dummyData={dummyData} name="Experince" />
+        <SkillsTypeSection dummyData={dummyData} name="Experince" />
 
-          {/* Education Sections */}
-         <Education dummyData={dummyData} heading="Education" />
-
+        {/* Education Sections */}
+        <Education dummyData={dummyData} heading="Education" />
       </div>
     </div>
   );
