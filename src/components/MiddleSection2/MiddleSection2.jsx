@@ -14,7 +14,7 @@ const MiddleSection2 = () => {
   const [address, setAddress] = useState("New York, USA");
   const [buttons, setButtons] = useState(["Message", "Connect"]);
   const [skills, setSkills] = useState(["React", "Node.js", "JavaScript"]);
-  const [education, setEducation] = useState(["MIT", "Harvard"]);
+  const [education, setEducation] = useState(["MIT", "Harvard" ,"10th" ,"12th"]);
   const [isExpanded, setIsExpanded] = useState(false);
 
   // About Section with "See More" Feature
