@@ -31,30 +31,30 @@ const MiddleSection2 = () => {
       (fullAboutText.length > maxLength ? "..." : "");
 
   return (
-    <div className="middle-section-2-mainParent">
-      <div className="middle-section-2-middle-container">
-        <div className="middle-section-2-middle-section">
+    <div className="Followers-middle-section-2-mainParent-public">
+      <div className="Followers-middle-section-2-middle-container-public">
+        <div className="Followers-middle-section-2-middle-section-public">
           {/* Profile Details */}
-          <div className="middle-section-2-profile-header">
-            <div className="middle-section-2-imageContainer">
+          <div className="Followers-middle-section-2-profile-header-public">
+            <div className="Followers-middle-section-2-imageContainer-public">
               <img
                 src={profilePic}
                 alt="Profile"
-                className="middle-section-2-profile-pic"
+                className="Followers-middle-section-2-profile-pic-public"
               />
             </div>
-            <div className="middle-section-2-collabsDetails">
+            <div className="Followers-middle-section-2-collabsDetails-public">
               <h4>Collabs</h4> <span>{collabs}</span>
             </div>
-            <div className="middle-section-2-connectionsDetails">
+            <div className="Followers-middle-section-2-connectionsDetails-public">
               <h4>Connections</h4>
               <span>{connections}</span>
             </div>
           </div>
 
           {/* Name and Details */}
-          <div className="middle-section-2-profile-info">
-            <div className="nameAndEdit">
+          <div className="Followers-middle-section-2-profile-info-public">
+            <div className="Followers-middle-section-2-nameAndEdit-public">
               <FiEdit />
               <h2>{name}</h2>
             </div>
@@ -63,23 +63,23 @@ const MiddleSection2 = () => {
           </div>
 
           {/* Buttons */}
-          <div className="middle-section-2-profile-buttons">
+          <div className="Followers-middle-section-2-profile-buttons-public">
             {buttons.map((btn, index) => (
-              <button key={index} className="middle-section-2-btn">
+              <button key={index} className="Followers-middle-section-2-btn-public">
                 {btn}
               </button>
             ))}
           </div>
 
           {/* About Section with Expandable Content */}
-          <div className="middle-section-2-about-section">
+          <div className="Followers-middle-section-2-about-section-public">
             <h3>About</h3>
 
             <p>
               {displayedText}
               <span>
                 {fullAboutText.length > maxLength && (
-                  <button className="middle-section-2-about-button" onClick={toggleExpand}>
+                  <button className="Followers-middle-section-2-about-button-public" onClick={toggleExpand}>
                     {isExpanded ? "See Less" : "See More"}
                   </button>
                 )}
@@ -88,32 +88,32 @@ const MiddleSection2 = () => {
           </div>
 
           {/* Upload Section */}
-          <div className="middle-section-2-upload-section">
-            <div className="middle-section-2-headingAndEdit">
+          <div className="Followers-middle-section-2-upload-section-public">
+            <div className="Followers-middle-section-2-headingAndEdit-public">
               <h3>Upload</h3>
-              <FiEdit className="middle-section-2-icon" />
+              <FiEdit className="Followers-middle-section-2-icon-public" />
             </div>
             <h6>No Upload yet.</h6>
           </div>
 
           {/* Experience Section */}
-          <div className="middle-section-2-upload-section">
-            <div className="middle-section-2-headingAndEdit">
+          <div className="Followers-middle-section-2-upload-section-public">
+            <div className="Followers-middle-section-2-headingAndEdit-public">
               <h3>Experience</h3>
-              <FiEdit className="middle-section-2-icon" />
+              <FiEdit className="Followers-middle-section-2-icon-public" />
             </div>
             <h6>No Experience yet.</h6>
           </div>
 
           {/* Skills Section */}
-          <div className="middle-section-2-skills-section">
-            <div className="middle-section-2-headingAndIcons">
+          <div className="Followers-middle-section-2-skills-section-public">
+            <div className="Followers-middle-section-2-headingAndIcons-public">
               <h3>Skills</h3>
               <FiEdit />
             </div>
-            <div className="middle-section-2-skill-list">
+            <div className="Followers-middle-section-2-skill-list-public">
               {skills.map((val, index) => (
-                <div key={index} className="middle-section-2-skillsMiniDiv">
+                <div key={index} className="Followers-middle-section-2-skillsMiniDiv-public">
                   {val}
                 </div>
               ))}
@@ -121,23 +121,23 @@ const MiddleSection2 = () => {
           </div>
 
           {/* Collabs Section */}
-          <div className="middle-section-2-upload-section">
-            <div className="middle-section-2-headingAndEdit">
+          <div className="Followers-middle-section-2-upload-section-public">
+            <div className="Followers-middle-section-2-headingAndEdit-public">
               <h3>Collabs</h3>
-              <FiEdit className="middle-section-2-icon" />
+              <FiEdit className="Followers-middle-section-2-icon-public" />
             </div>
             <h6>No Collab yet.</h6>
           </div>
 
           {/* Interests Section */}
-          <div className="middle-section-2-skills-section">
-            <div className="middle-section-2-headingAndIcons">
+          <div className="Followers-middle-section-2-skills-section-public">
+            <div className="Followers-middle-section-2-headingAndIcons-public">
               <h3>Interests</h3>
               <FiEdit />
             </div>
-            <div className="middle-section-2-skill-list">
+            <div className="Followers-middle-section-2-skill-list-public">
               {skills.map((val, index) => (
-                <div key={index} className="middle-section-2-skillsMiniDiv">
+                <div key={index} className="Followers-middle-section-2-skillsMiniDiv-public">
                   {val}
                 </div>
               ))}
@@ -145,14 +145,14 @@ const MiddleSection2 = () => {
           </div>
 
           {/* Education Section */}
-          <div className="middle-section-2-main-education">
-            <div className="middle-section-2-education-headingAndEdit">
+          <div className="Followers-middle-section-2-main-education-public">
+            <div className="Followers-middle-section-2-education-headingAndEdit-public">
               <h3>Education</h3>
               <FiEdit />
             </div>
-            <div className="middle-section-2-buttons-section">
+            <div className="Followers-middle-section-2-buttons-section-public">
               {education.map((edu, index) => (
-                <button key={index} className="middle-section-2-btn">
+                <button key={index} className="Followers-middle-section-2-btn-public">
                   {edu}
                 </button>
               ))}

@@ -1,10 +1,10 @@
-.middle-section-2-mainParent{
+.Followers-middle-section-2-mainParent-public{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.middle-section-2-middle-section {
+.Followers-middle-section-2-middle-section-public {
   padding: 20px;
   border-radius: 12px;
   text-align: center;
@@ -16,7 +16,7 @@
   position: relative;
 }
 
-.middle-section-2-profile-header {
+.Followers-middle-section-2-profile-header-public {
   display: flex;
   flex-direction: row-reverse;
   justify-content: end;
@@ -26,63 +26,63 @@
   font-size: 20px;
 }
 
-.middle-section-2-profile-info {
+.Followers-middle-section-2-profile-info-public {
   display: flex;
   flex-direction: column;
   align-items: end;
 }
-.nameAndEdit {
+.nameAndEdit-public {
   display: flex;
   justify-content: space-between;
   width: 75%;
 }
 
-.middle-section-2-profile-info h2 {
+.Followers-middle-section-2-profile-info-public h2 {
   font-size: 17px;
 }
 
-.middle-section-2-imageContainer {
+.Followers-middle-section-2-imageContainer-public {
   height: 75px;
   width: 75px;
   border-radius: 50%;
 }
 
-.middle-section-2-profile-pic {
+.Followers-middle-section-2-profile-pic-public {
   height: 100%;
   width: 100%;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.middle-section-2-profile-header div {
+.Followers-middle-section-2-profile-header-public div {
   display: flex;
   flex-direction: column-reverse;
 }
 
-.middle-section-2-profile-buttons {
+.Followers-middle-section-2-profile-buttons-public {
   display: flex;
   justify-content: end;
   gap: 20px;
 }
 
- .middle-section-2-about-button{
+ .Followers-middle-section-2-about-button-public{
   border: none;
   outline: none;
   background-color: transparent;
   color: rgb(144, 143, 143);
  }
-.middle-section-2-aboutPara{
+.Followers-middle-section-2-aboutPara-public{
   display: flex;
 }
-.middle-section-2-about-section h3 {
+.Followers-middle-section-2-about-section-public h3 {
   text-align: start;
 }
 
-.middle-section-2-about-section p {
+.Followers-middle-section-2-about-section-public p {
   text-align: start;
   font-size: 14px;
 }
-.middle-section-2-btn {
+.Followers-middle-section-2-btn-public {
   background: linear-gradient(to bottom, #ffe9ed, white);
   color: black;
   border: 1px solid black;
@@ -95,7 +95,7 @@
   
 }
 
-.middle-section-2-skill-list {
+.Followers-middle-section-2-skill-list-public {
   display: flex;
   align-items: center;
    gap: 10px;
@@ -105,32 +105,32 @@
   gap: 20px;
   flex-wrap: wrap;
 }
-.middle-section-2-headingAndIcons{
+.Followers-middle-section-2-headingAndIcons-public{
   display: flex;
   justify-content: space-between;
 }
-.middle-section-2-skill-list .middle-section-2-skillsMiniDiv {
+.Followers-middle-section-2-skill-list-public .Followers-middle-section-2-skillsMiniDiv-public {
   background-color: #f3efef;
   border-radius: 5px;
   padding: 5px 10px;
 }
-.middle-section-2-skills-section h3{
+.Followers-middle-section-2-skills-section-public h3{
   text-align: start;
 }
 
-.middle-section-2-main-education {
+.Followers-middle-section-2-main-education-public {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 10px;
 }
 
-.middle-section-2-education-headingAndEdit {
+.Followers-middle-section-2-education-headingAndEdit-public {
   display: flex;
   justify-content: space-between;
 }
 
-.middle-section-2-buttons-section {
+.Followers-middle-section-2-buttons-section-public {
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
@@ -138,7 +138,7 @@
   justify-content: center;
 }
 
-.middle-section-2-headingAndEdit{
+.Followers-middle-section-2-headingAndEdit-public{
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -146,10 +146,10 @@
 
  
 }
-.middle-section-2-headingAndEdit  .middle-section-2-icon{
+.Followers-middle-section-2-headingAndEdit-public  .Followers-middle-section-2-icon-public{
  cursor: pointer;
 }
-.middle-section-2-upload-section h6 {
+.Followers-middle-section-2-upload-section-public h6 {
 text-align: start;
 font-weight: 100;
 font-size: 15px;
@@ -157,12 +157,12 @@ font-size: 15px;
 
 }
 
-.middle-section-2-upload-section h6 {
+.Followers-middle-section-2-upload-section-public h6 {
 font-weight: 100;
 
 }
 
-.middle-section-2-upload-section h3 {
+.Followers-middle-section-2-upload-section-public h3 {
 text-align: start;
 
 font-size: 20px;
@@ -171,17 +171,17 @@ font-size: 20px;
 }
 
 @media (min-width: 1024px) {
-  .middle-section-2-main-education {
+  .Followers-middle-section-2-main-education-public {
       gap: 20px;
   }
-  .middle-section-2-buttons-section {
+  .Followers-middle-section-2-buttons-section-public {
       gap: 24px;
   }
 }
 
 
 @media (min-width: 1024px) {
-  .middle-section-2-btn {
+  .Followers-middle-section-2-btn-public {
       width: 120px;
       font-size: 13px;
       padding: 12px 15px;
@@ -190,38 +190,38 @@ font-size: 20px;
 
 
 @media (min-width: 1024px) and (max-width: 1062px) {
-  .middle-section-2-middle-section {
+  .Followers-middle-section-2-middle-section-public {
     width: 40vw;
     padding: 30px;
   }
-  .middle-section-2-imageContainer {
+  .Followers-middle-section-2-imageContainer-public {
     width: 90px;
     height: 90px;
   }
 
-  .middle-section-2-profile-header {
+  .Followers-middle-section-2-profile-header-public {
     font-size: 20px;
   }
-  .middle-section-2-profile-info h2 {
+  .Followers-middle-section-2-profile-info-public h2 {
     font-size: 20px;
   }
-  .middle-section-2-about-section p {
+  .Followers-middle-section-2-about-section-public p {
     font-size: 16px;
   }
-  .middle-section-2-collabratorDetails {
+  .Followers-middle-section-2-collabratorDetails-public {
     width: 150px;
   }
-  .middle-section-2-collabratorDetails h4 {
+  .Followers-middle-section-2-collabratorDetails-public h4 {
     font-size: 18px;
   }
-  .middle-section-2-collabratorDetails .middle-section-2-subCollabrators h6 {
+  .Followers-middle-section-2-collabratorDetails-public .Followers-middle-section-2-subCollabrators-public h6 {
     font-size: 10px;
   }
-  .middle-section-2-blur {
+  .Followers-middle-section-2-blur-public {
     height: 200px;
   }
-  .middle-section-2-blur h2,
-  .middle-section-2-blur h3 {
+  .Followers-middle-section-2-blur-public h2,
+  .Followers-middle-section-2-blur-public h3 {
     font-size: 26px;
   }
 }
